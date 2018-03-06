@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Madrid</title>
+  <link rel="stylesheet" href="https://js.arcgis.com/3.23/esri/css/esri.css">
+  <meta charset="utf-8">
+  <style>
+    html, body, #map {
+      width: 500;
+      height: 300;
+      margin: 0;
+      padding: 0;
+    }
+    .esriSimpleSliderTL{
+      top: 50px;
+    }
+  </style>
+  <script src="https://js.arcgis.com/3.23/"></script>
+  <script>
+    var map;
+
+    require(["esri/map",
+             "esri/geometry/Point",
+              "dojo/domReady!", ],
+
+    function(Map,
+             Point) {
+
+    var pt = new Point(-3.590,37.188);
+
+      map = new Map("map", {
+        basemap: "osm",  //For full list of pre-defined basemaps, navigate to http://arcg.is/1JVo6Wd
+        center: pt, // longitude, latitude
+        zoom: 12
+      });
+    });
+  </script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+<div id="map"></div>
+
+<iframe width="670" height="400" src="https://www.youtube.com/embed/7C-YmrwYDeM"  allowfullscreen></iframe>
+<img src="https://www.holidayguru.es/wp-content/uploads/2016/03/Alhambra-Granada-iStock_000030008608_Large-2-1.jpg" width= "670" height= "400" data-city="Madrid"></label>
+<img src="http://www.turgranada.es/wp-content/blogs.dir/2/files_mf/cache/th_a08941267bc4032585c7f26d4b99e296_Alhambra-video-home5.jpg?x53512" width= "670" height= "400" > </label>
+<img src="http://discoverandaluciaysevilla.com/blog/wp-content/uploads/2017/10/jardines-de-la-alhambra.jpg"width= "670" height= "400"></label>
+<img src="http://www.posadadeltoro.com/files/Header_home.jpg"width= "670" height= "400"></label>
+<img src="https://www.enforex.com/images/fichas/granada/ciudad-granada-7.jpg"width= "670" height= "400"></label>
+<img src="https://userscontent2.emaze.com/images/5b97cb2b-3db2-4852-b726-9ce7ac167e31/47491b188f3d9bd61426afb5fca2a87f.jpg"width= "670" height= "400"></label>
+<img src="https://www.hola.com/imagenes//viajes/2017032091957/hoteles-cueva-provincia-granada/0-426-255/casas-cueva-en-granada-t.jpg"width= "670" height= "400"></label>
+
+
+<input id="Button1" type="submit" value="Ayuntamiento de Granada" onClick=" window.location.href='http://www.granada.es/'
+"style="font-weight: bold; color: white; background-color: navy" />
+<a href="javascript:history.go(-1)">Volver atrás</a>
+</body>
+
+</html>

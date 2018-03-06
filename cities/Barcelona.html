@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Barcelona</title>
+  <link rel="stylesheet" href="https://js.arcgis.com/3.23/esri/css/esri.css">
+  <meta charset="utf-8">
+  <style>
+    html, body, #map {
+      width: 500;
+      height: 300;
+      margin: 0;
+      padding: 0;
+    }
+    .esriSimpleSliderTL{
+      top: 50px;
+    }
+  </style>
+  <script src="https://js.arcgis.com/3.23/"></script>
+  <script>
+    var map;
+
+    require(["esri/map",
+             "esri/geometry/Point",
+              "dojo/domReady!", ],
+
+    function(Map,
+             Point) {
+
+    var pt = new Point(2.172,41.382);
+
+      map = new Map("map", {
+        basemap: "osm",  //For full list of pre-defined basemaps, navigate to http://arcg.is/1JVo6Wd
+        center: pt, // longitude, latitude
+        zoom: 11
+      });
+    });
+
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+      <link rel="stylesheet" href="css/Estilos.css">
+
+
+</head>
+<body>
+
+<div id="map"></div>
+
+<iframe width="670" height="400" src="https://www.youtube.com/embed/31kDs3lc29Y"  allowfullscreen></iframe>
+<img src="http://todobarcelona.info/wp-content/uploads/2016/12/mercados-de-Barcelona-mas-importantes.jpg" width= "670" height= "400" data-city="Madrid"></label>
+<img src="https://www.sitgesluxuryrentals.com/wp-content/uploads/2017/03/iStock-509846884.jpg"width= "670" height= "400" ></label>
+<img src="http://linxconsulting.es/wp-content/uploads/2017/08/barcelona.jpg"width= "670" height= "400" ></label>
+<img src="https://www.nexusgeographics.com/sites/default/files/skyline%20bcn.jpg"width= "670" height= "400"></label>
+<img src="https://images2.bovpg.net/r/back/fr/sale/58947c42a03d6o.jpg"width= "670" height= "400" ></label>
+<img src="https://www.laguiadeviaje.com/wp-content/uploads/2014/05/Parque-de-Atracciones-del-Tibidabo-en-Barcelona-800x400.jpg"width= "670" height= "400" ></label>
+<img src="https://www.hertzpageo.com/img/large/barcelona_section_3_banner.png"width= "670" height= "400" ></label>
+
+
+<input id="Button1" type="submit" value="Ayuntamiento de Barcelona" onClick=" window.location.href='http://ajuntament.barcelona.cat/es/'
+"style="font-weight: bold; color: white; background-color: navy" />
+<a href="javascript:history.go(-1)">Volver atrás</a>
+</body>
+
+</html>

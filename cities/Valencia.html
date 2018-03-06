@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Valencia</title>
+  <link rel="stylesheet" href="https://js.arcgis.com/3.23/esri/css/esri.css">
+  <meta charset="utf-8">
+  <style>
+    html, body, #map {
+      width: 500;
+      height: 300;
+      margin: 0;
+      padding: 0;
+    }
+    .esriSimpleSliderTL{
+      top: 50px;
+    }
+  </style>
+  <script src="https://js.arcgis.com/3.23/"></script>
+  <script>
+    var map;
+
+    require(["esri/map",
+             "esri/geometry/Point",
+              "dojo/domReady!", ],
+
+    function(Map,
+             Point) {
+
+    var pt = new Point(-0.354,39.456);
+
+      map = new Map("map", {
+        basemap: "osm",  //For full list of pre-defined basemaps, navigate to http://arcg.is/1JVo6Wd
+        center: pt, // longitude, latitude
+        zoom: 10
+      });
+    });
+  </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+      <link rel="stylesheet" href="css/Estilos.css">
+
+
+</head>
+<body>
+<div id="map"></div>
+
+<iframe width="670" height="400" src="https://www.youtube.com/embed/NrVZnf01KcQ"  allowfullscreen></iframe>
+<img src="http://invattur.gva.es/wp-content/uploads/2013/10/panoramica_cac_valencia.jpg" data-city="Valencia" width="670" height="400"></label>
+<img src="https://valenciasecreta.com/wp-content/uploads/2015/10/micalet1.jpg" width="670" height="400"></label>
+<img src="https://media-cdn.tripadvisor.com/media/photo-s/02/b2/fe/48/casa-roberto.jpg" width="670" height="400"></label>
+<img src="https://fotos.hoteles.net/articulos/las-mejores-playas-de-la-provincia-de-valencia-1500-4.jpg" width="670" height="400"></label>
+<img src="https://www.miradanatural.es/imagenes/galeria/10/2818/grandes/1320995312.jpg" width="670" height="400"></label>
+<img src="http://fortmed.blogs.upv.es/files/2014/11/mejores-fotos-valencia-022.jpg" width="670" height="400"></label>
+<img src="https://www.surfingtheplanet.com/wp-content/uploads/2015/04/DSC2596.jpg" width="670" height="400"></label>
+
+<input id="Button1" type="submit" value="Ayuntamiento de Valencia" onClick=" window.location.href='http://www.valencia.es'
+"style="font-weight: bold; color: white; background-color: navy" />
+<a href="javascript:history.go(-1)">Volver atrás</a>
+</body>
+
+</html>

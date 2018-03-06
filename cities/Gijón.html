@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gijón</title>
+  <link rel="stylesheet" href="https://js.arcgis.com/3.23/esri/css/esri.css">
+  <meta charset="utf-8">
+  <style>
+    html, body, #map {
+      width: 500;
+      height: 300;
+      margin: 0;
+      padding: 0;
+    }
+    .esriSimpleSliderTL{
+      top: 50px;
+    }
+  </style>
+  <script src="https://js.arcgis.com/3.23/"></script>
+  <script>
+    var map;
+
+    require(["esri/map",
+             "esri/geometry/Point",
+              "dojo/domReady!", ],
+
+    function(Map,
+             Point) {
+
+    var pt = new Point(-5.677,43.529);
+
+      map = new Map("map", {
+        basemap: "osm",  //For full list of pre-defined basemaps, navigate to http://arcg.is/1JVo6Wd
+        center: pt, // longitude, latitude
+        zoom: 12
+      });
+    });
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+<div id="map"></div>
+
+<iframe width="670" height="400" src="https://www.youtube.com/embed/YFNvlDD9QMw"  allowfullscreen></iframe>
+<img src="https://www.turismoasturias.es/documents/11022/43955/04429_Gijon.jpg?t=1389261460739"width= "670" height= "400" data-city="Madrid"></label>
+<img src="http://en.turismo.gijon.es/data/images/f0/f6/64043/c1160x854_v1_fondo2.jpg"width= "670" height= "400"></label>
+<img src="http://images.nationalgeographic.com.es/medio/2016/02/29/gijon_600x328_b12de4fe.jpg"width= "670" height= "400"></label>
+<img src="http://images.nationalgeographic.com.es/medio/2017/03/27/gijon-esculturas-elogio-gente-machbel_48c00ae0.jpg"width= "670" height= "400"></label>
+<img src="http://www.xn--espaaescultura-tnb.es/export/sites/cultura/multimedia/galerias/destinos/puerto_gijon_s26096851.jpg_1306973099.jpg"width= "670" height= "400"></label>
+<img src="http://homohominisacrares.net/wp-content/uploads/2017/08/Iglesia-San-Pedro-Gijon.jpg"width= "670" height= "400"></label>
+<img src="http://www.carmenmoriyon.es/wp-content/uploads/2015/03/P1010565.jpg"width= "670" height= "400"></label>
+
+
+<input id="Button1" type="submit" value="Ayuntamiento de Gijón" onClick=" window.location.href='https://www.gijon.es/'
+ "style="font-weight: bold; color: white; background-color: navy" />
+<a href="javascript:history.go(-1)">Volver atrás</a>
+</body>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Toronto</title>
+  <link rel="stylesheet" href="https://js.arcgis.com/3.23/esri/css/esri.css">
+  <meta charset="utf-8">
+  <style>
+    html, body, #map {
+      width: 500;
+      height: 300;
+      margin: 0;
+      padding: 0;
+    }
+    .esriSimpleSliderTL{
+      top: 50px;
+    }
+  </style>
+  <script src="https://js.arcgis.com/3.23/"></script>
+  <script>
+    var map;
+
+    require(["esri/map",
+             "esri/geometry/Point",
+              "dojo/domReady!", ],
+
+    function(Map,
+             Point) {
+
+    var pt = new Point(-79.416,43.700);
+
+      map = new Map("map", {
+        basemap: "osm",  //For full list of pre-defined basemaps, navigate to http://arcg.is/1JVo6Wd
+        center: pt, // longitude, latitude
+        zoom: 10
+      });
+    });
+  </script>
+</head>
+<body>
+<div id="map"></div>
+
+<iframe width="670" height="400" src="https://www.youtube.com/embed/WSYFQpHhTqw"  allowfullscreen></iframe>
+<img src="https://s-media-cache-ak0.pinimg.com/originals/ef/ae/26/efae260756aef1831dfa41a479074b91.jpg" data-city="Toronto" width="670" height="400"></label>
+<img src="http://download.kataweb.it/mediaweb/image/brand_viaggi/2011/08/05/1312543461081__nicaws_nicawscache_13561312hr.jpg" width="670" height="400"></label>
+<img src="http://www.viajesnosana.com.mx/web/uploads/image/can/toronto/10.jpg" width="670" height="400"></label>
+<img src="http://www.hsireland.com/img/news/picture_2460.jpg" width="670" height="400"></label>
+<img src="https://previews.123rf.com/images/yelo34/yelo341403/yelo34140300066/26517427-toronto-canad%C3%81-08-de-marzo-2014-casa-loma-es-uno-de-los-diez-mejores-lugares-de-inter%C3%A9s-tur%C3%ADstico-m%C3%A1s-impor.jpg" width="670" height="400"></label>
+<img src="https://s1.citypass.net/img-88a31c4/thingstodo/toronto/ttdtoronto-cn-tower.jpg" width="670" height="400"></label>
+<img src="https://medias.momentfactory.com/2015/11/DSC_2021.jpg" width="670" height="400"></label>
+
+<input id="Button1" type="submit" value="Ayuntamiento de Toronto" onClick=" window.location.href='https://vertoronto.com/ayuntamiento/' "style="font-weight: bold; color: white; background-color: navy" />
+<a href="javascript:history.go(-1)">Volver atrás</a>
+</body>
+
+</html>
